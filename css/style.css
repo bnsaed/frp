@@ -1,0 +1,102 @@
+* {
+    font-family: "Tahoma";
+    font-family: 'Readex Pro', sans-serif;
+    user-select: none;
+    font-weight: 450;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border: 3px solid #eee;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #888;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
+    -ms-scroll-behavior: smooth;
+    -o-scroll-behavior: smooth;
+}
+
+
+header {
+    width: 100%;
+    padding: 10px;
+    background-color: #ececec;
+    z-index: 6;
+}
+
+header .container img {
+    width: 60px;
+    transition: var(--main-duration);
+    -webkit-transition: var(--main-duration);
+    -moz-transition: var(--main-duration);
+    -ms-transition: var(--main-duration);
+    -o-transition: var(--main-duration);
+}
+
+header .imgs img { 
+    border-radius: 50%;
+    width: 40px;
+}
+
+header .container h1 {
+    font-size: 25px;
+    color: #333;
+}
+
+
+.landing h1 {
+    padding-top: 30px;
+
+    color: #333;
+}
+
+.landing ul li {
+    list-style: none;
+    padding: 20px;
+}
+
+.landing ul li a {
+    text-decoration: none;
+    color: #9E1C32;
+    transition: .5s;
+}
+
+.landing ul li a:hover {
+    color: #d4344f;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer span {
+    color: #d4344f;
+}
