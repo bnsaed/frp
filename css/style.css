@@ -1,10 +1,9 @@
 * {
-    font-family: "Tahoma";
-    font-family: 'Readex Pro', sans-serif;
     user-select: none;
     font-weight: 450;
     text-transform: capitalize;
     box-sizing: border-box;
+    font-family: 'Mochiy Pop P One', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -58,7 +57,7 @@ header .container img {
     -o-transition: var(--main-duration);
 }
 
-header .imgs img { 
+header .imgs img {
     border-radius: 50%;
     width: 40px;
 }
