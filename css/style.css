@@ -6,6 +6,13 @@
     font-family: 'Mochiy Pop P One', sans-serif;
 }
 
+:root {
+    --main-color: #444;
+    --main-color-two: #2196f3;
+    --main-color-haver: #3c709b;
+    --secondary-color: #777;
+}
+
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -15,7 +22,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #333;
+    background-color: var(--main-color);
     border: 3px solid #eee;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -48,13 +55,14 @@ header {
     z-index: 6;
 }
 
-header .container img {
-    width: 60px;
-    transition: var(--main-duration);
-    -webkit-transition: var(--main-duration);
-    -moz-transition: var(--main-duration);
-    -ms-transition: var(--main-duration);
-    -o-transition: var(--main-duration);
+header .container .text h1 {
+    color: var(--main-color-two);
+    transition: .5s;
+    font-family: 'Frijole', cursive;
+}
+
+header .container .text h1:hover {
+    color: var(--main-color-haver)
 }
 
 header .imgs img {
@@ -64,14 +72,14 @@ header .imgs img {
 
 header .container h1 {
     font-size: 25px;
-    color: #333;
+    color: var(--main-color);
 }
 
 
 .landing h1 {
     padding-top: 30px;
 
-    color: #333;
+    color: var(--main-color);
 }
 
 .landing ul li {
@@ -81,21 +89,26 @@ header .container h1 {
 
 .landing ul li a {
     text-decoration: none;
-    color: #9E1C32;
+    color: var(--main-color-two);
     transition: .5s;
 }
 
 .landing ul li a:hover {
-    color: #d4344f;
+    color: var(--main-color-haver);
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--main-color);
+    color: #ffffff;
     padding: 20px;
     text-align: center;
 }
 
 footer span {
-    color: #d4344f;
+    color: var(--main-color-two);
+    transition: .5s;
+}
+
+footer span:hover {
+    color: var(--main-color-haver)
 }
