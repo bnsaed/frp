@@ -8,9 +8,9 @@
 
 :root {
     --main-color: #444;
-    --main-color-two: #c2a609;
-    --main-color-haver: #978416;
-    --secondary-color: #777;
+    --main-color-hover: #666;
+    --main-color-two: #579BB1;
+    --main-color-two-hover: #0081B4;
 }
 
 ::-webkit-scrollbar {
@@ -58,11 +58,11 @@ header {
 header .container .text h1 {
     color: var(--main-color-two);
     transition: .5s;
-    font-family: 'Frijole', cursive;
+    font-family: 'Rammetto One', cursive;
 }
 
 header .container .text h1:hover {
-    color: var(--main-color-haver)
+    color: var(--main-color-two-hover)
 }
 
 header .imgs img {
@@ -70,21 +70,52 @@ header .imgs img {
     width: 40px;
 }
 
-header .container h1 {
+header .container nav h1 {
     font-size: 25px;
+    
+}
+
+header .container nav h1 span {
+    display: inline;
+    font-family: 'Rammetto One', cursive;
+}
+
+header .container nav h1 .one {
+    color: var(--main-color-two);
+}
+
+header .container nav h1 .two {
+    color: var(--main-color-two-hover);
+}
+
+header .container nav h1 .three {
     color: var(--main-color);
 }
 
+.landing {
+    margin-top: 50px;
+}
 
 .landing h1 {
     padding-top: 30px;
-
     color: var(--main-color);
+    display: inline;
+    transition: .5s;
+}
+
+.landing h1:hover {
+    color: var(--main-color-hover);
 }
 
 .landing ul li {
     list-style: none;
     padding: 20px;
+}
+
+.landing ul li i {
+    font-size: 18px;
+    padding-left: 5px;
+    color: var(--main-color);
 }
 
 .landing ul li a {
@@ -94,7 +125,7 @@ header .container h1 {
 }
 
 .landing ul li a:hover {
-    color: var(--main-color-haver);
+    color: var(--main-color-two-hover);
 }
 
 footer {
@@ -110,5 +141,5 @@ footer span {
 }
 
 footer span:hover {
-    color: var(--main-color-haver)
+    color: var(--main-color-two-hover)
 }
