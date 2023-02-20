@@ -110,9 +110,10 @@ header .imgs img:active {
 
 
 }
+
 header .container nav h1 {
     font-size: 25px;
-    
+
 }
 
 header .container nav h1 span {
@@ -182,4 +183,68 @@ footer span {
 
 footer span:hover {
     color: var(--main-color-two-hover)
+}
+
+@media (min-width: 1000px) {
+    .landing {
+        display: none;
+    }
+
+    .pc {
+        text-align: center;
+    }
+
+    .pc h1 {
+        margin-top: 200px;
+        margin-bottom: 70px;
+        text-align: center;
+        color: var(--main-color);
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+    }
+
+    .pc h1:hover {
+        transform: scale(.95);
+        -webkit-transform: scale(.95);
+        -moz-transform: scale(.95);
+        -ms-transform: scale(.95);
+        -o-transform: scale(.95);
+    }
+
+    .pc h1:active {
+        transform: scale(.9);
+        -webkit-transform: scale(.9);
+        -moz-transform: scale(.9);
+        -ms-transform: scale(.9);
+        -o-transform: scale(.9);
+    }
+
+    .pc a {
+        text-decoration: none;
+        color: var(--main-color-hover);
+        padding-right: 13px;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+    }
+
+    .pc a:hover {
+        color: #555;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+}
+
+    footer {
+        margin-top: 130px;
+        background-color: #fff;
+        color: var(--main-color);
+    }
 }
