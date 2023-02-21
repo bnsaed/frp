@@ -91,6 +91,12 @@ header .imgs img:active {
     -o-transform: scale(1.5);
 }
 
+@media (max-width: 391px) {
+    header .imgs img {
+        display: none;
+    }
+}
+
 @media (max-width: 767px) {
     header .imgs img:hover {
         transform: scale(1);
@@ -185,6 +191,12 @@ footer span:hover {
     color: var(--main-color-two-hover)
 }
 
+@media (max-width: 1000px) {
+    .pc {
+        display: none;
+    }
+}
+
 @media (min-width: 1000px) {
     .landing {
         display: none;
@@ -204,6 +216,7 @@ footer span:hover {
         -moz-transition: .5s;
         -ms-transition: .5s;
         -o-transition: .5s;
+        line-height: 1.7;
     }
 
     .pc h1:hover {
@@ -240,7 +253,7 @@ footer span:hover {
         -moz-transform: scale(1.1);
         -ms-transform: scale(1.1);
         -o-transform: scale(1.1);
-}
+    }
 
     footer {
         margin-top: 130px;
