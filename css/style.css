@@ -97,26 +97,6 @@ header .imgs img:active {
     }
 }
 
-@media (max-width: 767px) {
-    header .imgs img:hover {
-        transform: scale(1);
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -o-transform: scale(1);
-    }
-
-    header .imgs img:active {
-        transform: scale(1);
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -o-transform: scale(1);
-    }
-
-
-}
-
 header .container nav h1 {
     font-size: 25px;
 
@@ -169,6 +149,7 @@ header .container nav h1 .three {
     text-decoration: none;
     color: var(--main-color-two);
     transition: .5s;
+    line-height: 1.7;
 }
 
 .landing ul li a:hover {
@@ -195,10 +176,33 @@ footer span:hover {
     .pc {
         display: none;
     }
+    footer {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        line-height: 1.7;
+    }
+    footer i {
+        font-size: 45px;
+        color: white;
+        padding: 10px 10px 20px 10px ;
+        transition: .6s;
+        -webkit-transition: .6s;
+        -moz-transition: .6s;
+        -ms-transition: .6s;
+        -o-transition: .6s;
+}
+
+    footer i:hover {
+        color: #CCC;
+    }
 }
 
 @media (min-width: 1000px) {
     .landing {
+        display: none;
+    }
+
+    .icon {
         display: none;
     }
 
