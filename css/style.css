@@ -308,4 +308,11 @@ footer span:hover {
         color: var(--main-color);
         display: block;
     }
+    footer div span:hover {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    footer div span:active {
+        font-size: 20px;
+    }
 }
