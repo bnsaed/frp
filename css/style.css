@@ -73,6 +73,7 @@ header .imgs img {
     -moz-transition: .3s;
     -ms-transition: .3s;
     -o-transition: .3s;
+    box-shadow: 0 0 5px #0081B4;
 }
 
 header .imgs img:hover {
@@ -123,14 +124,23 @@ header .container nav h1 .three {
     header .container nav h1 .one {
         display: none;
     }
+}
 
+@media (max-width: 319px) {
     header .container nav h1 .two {
         display: none;
     }
 }
 
+
 .landing {
     margin-top: 50px;
+
+}
+
+.landing .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .landing h1 {
@@ -143,6 +153,7 @@ header .container nav h1 .three {
 .landing h1:hover {
     color: var(--main-color-hover);
 }
+
 
 .landing ul li {
     list-style: none;
@@ -184,7 +195,7 @@ footer span:hover {
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 991px) {
     .pc {
         display: none;
     }
@@ -211,7 +222,7 @@ footer span:hover {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
     .landing {
         display: none;
     }
@@ -289,10 +300,11 @@ footer span:hover {
         -ms-transform: scale(1.5);
         -o-transform: scale(1.5);
     }
- 
+
     .pc a .facebook:hover {
         color: #0081B4;
     }
+
     .pc a .instagram:hover {
         color: #C12754;
     }
@@ -308,10 +320,12 @@ footer span:hover {
         color: var(--main-color);
         display: block;
     }
+
     footer div span:hover {
         font-size: 18px;
         font-weight: bold;
     }
+
     footer div span:active {
         font-size: 20px;
     }
